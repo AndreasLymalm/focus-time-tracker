@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './TimeTracker.css';
+import './TimeTracker.scss';
 
 type TimeTrackerProps = {
   title: string,
