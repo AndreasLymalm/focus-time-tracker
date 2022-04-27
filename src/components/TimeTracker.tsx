@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './TimeTracker.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPause, faPlay } from '@fortawesome/free-solid-svg-icons'
 
 type TimeTrackerProps = {
   title: string,
@@ -12,6 +14,8 @@ const TimeTracker = () => {//({ title, paragraph }: TimeTrackerProps) =>
 
   return <main>
     { time }
+    <button><FontAwesomeIcon icon={faPause} /></button>
+    <button><FontAwesomeIcon icon={faPlay} /></button>
   </main>
 }
 
